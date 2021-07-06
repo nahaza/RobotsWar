@@ -22,6 +22,7 @@ public class RobotWar {
             for (int i = 0; i < ListOfRobots.getRobotList().size(); i++) {
                 Robot currentRobot = ListOfRobots.getRobot(i);
                 shootingKey1 = dataFromConsole.getShootingKeyFromConsole(currentRobot.getRobotName());
+                //to exit from the game at any moment
                 if (shootingKey1.equals("L")) {
                     System.out.println("Goodbye");
                     isFinish = true;
